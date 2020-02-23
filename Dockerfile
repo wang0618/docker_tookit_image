@@ -1,6 +1,6 @@
 FROM alpine:3.11
 
-RUN apk add --no-cache openssh-client git tmux vim curl bash build-base
+RUN apk add --no-cache openssh-client git tmux vim curl bash build-base bind-tools
 
 # set bash as default shell
 RUN sed -i "s/ash/bash/" /etc/passwd
